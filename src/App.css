@@ -1,0 +1,113 @@
+
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../public/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../public/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../public/fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../public/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#form-file-upload {
+  height: 24rem;
+  width: 40rem;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 20px auto 40px;
+}
+
+#input-file-upload {
+  display: none;
+}
+
+#label-file-upload {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 1rem;
+  border-style: dashed;
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+.upload-button {
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1rem;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  background-color: transparent;
+}
+
+.upload-button:hover {
+  text-decoration-line: underline;
+}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.watermarked {
+  position: relative;
+  overflow: hidden;
+}
+
+.watermarked img {
+  width: 100%;
+}
+
+.watermarked::before {
+  position: absolute;
+  top: -75%;
+  left: -75%;
+
+  display: block;
+  width: 150%;
+  height: 150%;
+
+  transform: rotate(-45deg);
+  content: attr(data-watermark);
+
+  opacity: 0.7;
+  line-height: 3em;
+  letter-spacing: 2px;
+  color: #fff;
+}

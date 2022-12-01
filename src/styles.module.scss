@@ -1,0 +1,39 @@
+.PageContent {
+    .headingSec {
+        border: 1px solid #4760f3;
+        background-color: #4760f3;
+        color: #fff;
+
+        h4 {
+            font: 500 18px/16px poppins-medium;
+        }
+    }
+
+    .contentSec {
+        .error {
+            font: 600 14px/16px poppins-semibold;
+            text-align: center;
+            position: relative;
+            padding: .75rem 1.25rem;
+            margin-bottom: 1rem;
+            border-radius: .25rem;
+            color: red;
+            background-color: #dfdcdc;
+        }
+        .generatBtn {
+            display: inline-block;
+            padding: 14px 24px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            font: 500 14px/16px poppins-medium;
+            border-radius: 7px;
+            border: 1px solid #4760f3;
+            background-color: #4760f3;
+            color: #fff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .1607843137254902);
+            margin: 0 auto 0 auto;
+        }
+    }
+
+}
